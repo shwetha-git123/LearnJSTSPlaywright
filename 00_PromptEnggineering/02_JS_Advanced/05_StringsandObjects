@@ -1,0 +1,26 @@
+let name = "John";
+let message= `Hello, ${name}! Welcome to the world of JavaScript.`;
+console.log(message);
+
+console.log("A".charCodeAt(0));
+console.log("Shwetha".charCodeAt(2));
+console.log("w".charCodeAt(0));
+
+let url= "https://www.example.com";
+let domain = url.slice(8, 19);
+console.log(domain);
+
+let a1=url.includes("example"); // true 
+let a2=url.includes("test"); // false
+console.log(a1);
+console.log(a2);
+
+let a3=url.startsWith("https"); // true
+let a4=url.endsWith(".com");    
+console.log(a3);
+console.log(a4);
+
+console.log(url.indexOf("example")); // 12
+console.log(url.lastIndexOf("e")); // 17
+
+

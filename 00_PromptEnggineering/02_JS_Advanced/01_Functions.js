@@ -47,3 +47,23 @@ console.log(`The quotient is: ${quotient}`); // Logging the return value of the 
 var x = 5; // Function-scoped 
 let y = 10; // Block-scoped
 const z = 15; // Block-scoped and cannot be reassigned
+
+//example of block scope
+if (true) {
+    let blockScopedVariable = "I am block scoped!";
+    console.log(blockScopedVariable); // Accessible here
+}
+console.log(blockScopedVariable); // Uncaught ReferenceError: blockScopedVariable is not defined
+
+//example of function scope
+function functionScopeExample() {
+    var functionScopedVariable = "I am function scoped!";
+    console.log(functionScopedVariable); // Accessible here
+}
+functionScopeExample(); 
+console.log(functionScopedVariable); // Uncaught ReferenceError: functionScopedVariable is not defined
+
+//example of const
+const constantVariable = "I cannot be reassigned!";
+// constantVariable = "Trying to reassign"; // Uncaught TypeError: Assignment to constant variable. 
+
